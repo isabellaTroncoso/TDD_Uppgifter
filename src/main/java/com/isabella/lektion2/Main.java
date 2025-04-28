@@ -4,6 +4,12 @@ import com.isabella.lektion2.uppgift2.Discount;
 import com.isabella.lektion2.uppgift2.DiscountTenProcent;
 import com.isabella.lektion2.uppgift2.Item;
 import com.isabella.lektion2.uppgift2.Order;
+import com.isabella.lektion2.uppgift4.Bird;
+import com.isabella.lektion2.uppgift4.Dog;
+import com.isabella.lektion2.uppgift4.IAnimal;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -28,6 +34,22 @@ public class Main {
         /*För att skriva ut allt så använde jag mig bara av en metod som printar ut allt
         * i min order klass*/
         order.printSummary();
+
+        //Uppgift 4
+        List<IAnimal> animalList = new ArrayList();
+        Bird bird = new Bird();
+        Dog dog = new Dog();
+
+
+        animalList.add(bird);
+        animalList.add(dog);
+        for (IAnimal animal : animalList) {
+            animal.eat();
+
+        }
+
+
+
 
 
 
